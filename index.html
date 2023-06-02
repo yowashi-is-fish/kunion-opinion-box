@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body class="background">
-  <div class="box">
+  <div class="box" style="padding-bottom: 4%;">
     <h1><span class="indention">[2023年度]&nbsp;</span><span class="indention">生徒会</span><span class="indention">オンライン</span><span class="indention">意見箱</span></h1>
     <div class="text">
       <p>
@@ -28,7 +28,7 @@
         </div>
       </p>
     </div>
-    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7eif4HL_u4B_Bd6lZbTr-mDyKQLoeNYhownT-tsZbnvXERw/formResponse">
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7eif4HL_u4B_Bd6lZbTr-mDyKQLoeNYhownT-tsZbnvXERw/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
       <div class="form">
         <div>
           <h2>学年<span style="color: red;">&nbsp;*</span></h2>
@@ -109,6 +109,15 @@
       </div>
     </form>
   </div>
+  <script type="text/javascript">
+    let submitted = false;
+  </script>
+  <iframe
+    name="hidden_iframe"
+    id="hidden_iframe"
+    style="display: none"
+    onload="if(submitted){window.location='./thanks';}"
+  ></iframe>
   <script src="./js/form.js"></script>
   <script src="./js/branch.js"></script>
 </body>
