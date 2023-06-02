@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[2023年度] 生徒会オンライン意見箱</title>
+  <link rel="icon" href="./img/onkou-logo.png">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="background">
+  <div class="box">
+    <h1><span class="indention">[2023年度]&nbsp;</span><span class="indention">生徒会</span><span class="indention">オンライン</span><span class="indention">意見箱</span></h1>
+    <div class="text">
+      <p>
+        <span class="indention">国立音楽大学</span><span class="indention">附属高等学校</span><span class="indention">音楽科</span><span class="indention">目安箱</span><span class="indention">です。</span><br>
+        <span class="indention">要望や質問等は、</span><span class="indention">気軽に投稿してください。</span><br>
+        <span class="indention">投稿する際には、</span><span class="indention">具体的に</span><span class="indention">どうして欲しいか等を</span><span class="indention">理由と共に</span><span class="indention">記載してください｡</span>
+        
+        <div class="convo">
+          <p>
+            &nbsp;例)&nbsp;
+          </p>
+          <p>
+            <span class="indention">生徒会便りを</span><span class="indention">作って欲しい。</span><br>
+            <span class="indention">理由:&nbsp;</span><span class="indention">生徒会がなにを</span><span class="indention">しているのか</span><span class="indention">知りたいから</span>
+          </p>
+        </div>
+      </p>
+    </div>
+    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSf7eif4HL_u4B_Bd6lZbTr-mDyKQLoeNYhownT-tsZbnvXERw/formResponse">
+      <div class="form">
+        <div>
+          <h2>学年<span style="color: red;">&nbsp;*</span></h2>
+          <label class="radio indention">
+            <input type="radio" name="entry.1246592691" value="1年生" autocomplete="off" class="reset" required>
+            1年生
+          </label>
+          <label class="radio indention">
+            <input type="radio" name="entry.1246592691" value="2年生" autocomplete="off" class="reset" required>
+            2年生
+          </label>
+          <label class="radio indention">
+            <input type="radio" name="entry.1246592691" value="3年生" autocomplete="off" class="reset" required>
+            3年生
+          </label>
+        </div>
+        <div>
+          <h2>内容<span style="color: red;">&nbsp;*</span></h2>
+          <label class="radio indention">
+            <input type="radio" name="entry.1090198091" class="select-branch" value="学校生活に関する意見・質問" autocomplete="off" class="reset" checked required>
+            学校生活に関する意見・質問
+          </label>
+          <label class="radio indention">
+            <input type="radio" name="entry.1090198091" class="select-branch" value="要望" autocomplete="off" class="reset" required>
+            要望
+          </label>
+          <label class="radio indention">
+            <input type="radio" name="entry.1090198091" class="select-branch" value="その他" autocomplete="off" class="reset" required>
+            その他
+          </label>
+        </div>
+        <div id="学校生活に関する意見・質問" class="branch">
+          <div>
+            <h2>学校生活に関するご意見・ご提案をお書きください</h2>
+            <textarea class="textarea reset" placeholder="回答を入力" name="entry.1667934467" autocomplete="off"></textarea>
+          </div>
+          <div>
+            <h2>理由</h2>
+            <textarea class="textarea reset" placeholder="回答を入力" name="entry.391689187" autocomplete="off"></textarea>
+          </div>
+          <div style="visibility: hidden;">
+            <h2>空白</h2>
+            <textarea class="textarea"></textarea>
+          </div>
+        </div>
+        <div id="要望" class="branch" style="display: none;">
+          <div>
+            <h2>ご要望をお聞かせください</h2>
+            <textarea class="textarea reset" placeholder="回答を入力" name="entry.2070584778" autocomplete="off"></textarea>
+          </div>
+          <div>
+            <h2>理由</h2>
+            <textarea class="textarea reset" placeholder="回答を入力" name="entry.188205575" autocomplete="off"></textarea>
+          </div>
+          <div>
+            <h2>具体例</h2>
+            <textarea class="textarea reset" placeholder="回答を入力" name="entry.1708176349" autocomplete="off"></textarea>
+          </div>
+        </div>
+        <div id="その他" class="branch" style="display: none;">
+          <div>
+            <h2>自由記述欄</h2>
+            <textarea class="textarea reset" placeholder="回答を入力" name="entry.861211709" autocomplete="off"></textarea>
+          </div>
+          <div style="visibility: hidden;">
+            <h2>空白</h2>
+            <textarea class="textarea"></textarea>
+          </div>
+          <div style="visibility: hidden;">
+            <h2>空白</h2>
+            <textarea class="textarea"></textarea>
+          </div>
+        </div>
+        <div class="button-form">
+          <button class="button submit" type="submit">送信</button>
+          <button class="button" type="reset">リセット</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="./js/form.js"></script>
+  <script src="./js/branch.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+  user-select: none;
+  -webkit-user-select:none;
+  font-family: 'Open Sans_';
+}
+
+.background {
+  background: linear-gradient(-45deg, rgba(203, 212, 10, .5), rgba(133, 5, 88, .5)) fixed,
+  url(./img/kunion-background.jpg);
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 120, 200, 0.6);
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #dcdcdc;
+}
+
+@font-face { 
+  font-family: "Open Sans_"; 
+  src: url("./fonts/OpenSans.ttf") format("truetype")
+}
+
+.box {
+  background: rgba(255,255,255,0.8);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+  padding-bottom: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+  border-radius: 30px;
+  min-height: 96%;
+}
+
+p {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.text {
+  padding-top: 0%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.form {
+  padding-top: 0%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.radio {
+  padding-right: 2%;
+}
+
+.textarea {
+  resize: none;
+  width:100%;
+  font-family: 'Open Sans_';
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 100px;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+  vertical-align: top;
+}
+
+.button-form {
+  padding-top: 2%;
+}
+
+button {
+/* bulma.io v0.9.3 | MIT License | github.com/jgthms/bulma */
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: #363636;
+  cursor: pointer;
+  justify-content: center;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: calc(0.5em - 1px);
+  text-align: center;
+  white-space: nowrap;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  font-size: 1rem;
+  height: 2.5em;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.5em - 1px);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  padding-top: calc(0.5em - 1px);
+  position: relative;
+  vertical-align: top;
+}
+
+.button:hover {
+  border-color: #b5b5b5;
+  color: #363636;
+}
+
+.button:focus {
+  border-color: #485fc7;
+  color: #363636;
+}
+
+.button.submit {
+  background-color: #485fc7;
+    border-color: transparent;
+    color: #fff;
+}
+
+.indention {
+  display: inline-block;
+}
+
+.convo {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+}
